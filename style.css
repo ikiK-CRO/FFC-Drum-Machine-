@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+:root {
+  --back: #230c0f;
+  --main: #cba328;
+  --alternative: #d6f49d;
+  --alternative2: #EAD637;
+}
+
+* {
+  font-family: "Zen Dots", cursive;
+  color: var(--main);
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: var(--back);
+}
