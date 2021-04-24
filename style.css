@@ -2,24 +2,25 @@
 
 :root {
   --back: #e0e0e0;
-  --main: #a7c5dc;
-  --alternative: #f0f0f0;
-  --alternative2: #c5e7e0;
+  --main: #1d3649;
+  --alternative: #8ccfc1;
+  --alternative2: #52b7a1;
 }
 
 * {
   font-family: "Zen Dots", cursive;
-  color: var(--back);
+  color: var(--main);
 }
 
-html, body {
+html,
+body {
   background-color: var(--back);
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-#main{
+#main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +28,35 @@ html, body {
 }
 
 #components-app {
-  min-width: 70vh;
-  min-height: 70vh;
+  min-width: 80vh;
+  min-height: 50vh;
+  border-radius: 20px;
+  background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  text-align: center;
+}
+h1 {
+  filter: drop-shadow(3px 2px 1px black);
+  margin: 20px;
+  max-height: 40px;
+}
 
+.grid {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  color: var(--alternative2);
+  border-radius: 5px;
+  background: var(--back);
+  box-shadow: inset 5px 5px 15px #bebebe, inset -5px -5px 15px #ffffff;
+  height: 50px;
+  width: 50px;
 }
