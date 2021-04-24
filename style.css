@@ -1,19 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
 :root {
-  --back: #230c0f;
-  --main: #cba328;
-  --alternative: #d6f49d;
-  --alternative2: #EAD637;
+  --back: #e0e0e0;
+  --main: #a7c5dc;
+  --alternative: #f0f0f0;
+  --alternative2: #c5e7e0;
 }
 
 * {
   font-family: "Zen Dots", cursive;
-  color: var(--main);
+  color: var(--back);
 }
 
-body {
-  min-width: 100%;
-  min-height: 100%;
+html, body {
   background-color: var(--back);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#components-app {
+  min-width: 70vh;
+  min-height: 70vh;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
 }
