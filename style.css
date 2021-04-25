@@ -3,7 +3,7 @@
 :root {
   --back: #e0e0e0;
   --main: #1d3649;
-  --alternative: #8ccfc1;
+  --alternative: #4666FF;
   --alternative2: #52b7a1;
 }
 
@@ -27,11 +27,11 @@ body {
   height: 100%;
 }
 
-#components-app {
+#drum-machine {
   min-width: 80vh;
   min-height: 50vh;
   border-radius: 20px;
-  background: #e0e0e0;
+  background: var(--back);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   text-align: center;
 }
@@ -41,14 +41,21 @@ h1 {
   max-height: 40px;
 }
 
+#box {
+  display: flex;
+  flex-direction: row;
+}
+#box > .grid {
+  flex-grow: 1;
+}
 .grid {
   display: grid;
-  grid-gap: 1px;
   grid-template-columns: repeat(3, 1fr);
-  margin: auto;
+  gap: 5px;
 }
 
-.grid > div {
+.grid:nth-child(1) > .drum-pad {
+  font-size: x-large;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +63,25 @@ h1 {
   color: var(--alternative2);
   border-radius: 5px;
   background: var(--back);
-  box-shadow: inset 5px 5px 15px #bebebe, inset -5px -5px 15px #ffffff;
-  height: 50px;
-  width: 50px;
+  box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+  height: 70px;
+  /* width: 50px; */
+}
+
+.grid:nth-child(1) > .drum-pad:hover {
+  color: var(--alternative);
+  border-radius: 5px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff; /* width: 50px; */
+}
+
+.grid:nth-child(2) {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e0e0e0;
+  background: var(--back);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }

@@ -10,19 +10,20 @@
   </head>
   <body>
     <div id="main">
-      <div id="components-app">
-        <h1>DRUM MACHINE</h1>
+      <div id="drum-machine">
+        <h1>{{title}}</h1>
         <div id="box">
           <div class="grid">
-            <div>Q</div>
+            <drum-pad
+              v-for="item in drumList"
+              v-bind:drum="item"
+              v-bind:key="item.id"
+            ></drum-pad>
+          </div>
+          <div class="grid">
+            <div id="display">Q</div>
             <div>W</div>
             <div>E</div>
-            <div>A</div>
-            <div>S</div>
-            <div>D</div>
-            <div>Z</div>
-            <div>X</div>
-            <div>C</div>  
           </div>
         </div>
       </div>
