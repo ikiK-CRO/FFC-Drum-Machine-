@@ -3,7 +3,7 @@
 :root {
   --back: #e0e0e0;
   --main: #1d3649;
-  --alternative: #4666FF;
+  --alternative: #ffad00;
   --alternative2: #52b7a1;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 #drum-machine {
-  min-width: 80vh;
+  min-width: 90vh;
   min-height: 50vh;
   border-radius: 20px;
   background: var(--back);
@@ -52,6 +52,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
+  max-width: 45vh;
 }
 
 .grid:nth-child(1) > .drum-pad {
@@ -72,7 +73,6 @@ h1 {
   color: var(--alternative);
   border-radius: 5px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff; /* width: 50px; */
 }
 
 .grid:nth-child(2) {
@@ -84,4 +84,18 @@ h1 {
   background: #e0e0e0;
   background: var(--back);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main);
+  padding: 40px;
+  min-width: 100px;
+  min-height: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: var(--alternative2);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
