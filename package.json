@@ -2,7 +2,7 @@
   "name": "ffc-drum-machine-",
   "version": "1.0.0",
   "description": "Front End Development Libraries Projects - Drum Machine  Vue3",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ikiK-CRO/FFC-Drum-Machine-/issues"
   },
-  "homepage": "https://github.com/ikiK-CRO/FFC-Drum-Machine-#readme"
+  "homepage": "https://github.com/ikiK-CRO/FFC-Drum-Machine-#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
